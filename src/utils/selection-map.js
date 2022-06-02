@@ -1,0 +1,50 @@
+
+export default function selectionMap({series,films}){
+    return{
+        series:[
+            {
+                title:'Documentries',
+                data: series.filter((item)=>item.genre==='documentaries')
+            },
+            {
+                title:'Childrens',
+                data: series.filter((item)=>item.genre==='children')
+            },
+            {
+                title:'Crime',
+                data: series.filter((item)=>item.genre==='crime')
+            },
+            {
+                title:'Feel Good',
+                data: series.filter((item)=>item.genre==='feel-good')
+            },
+            {
+                title:'Comedies',
+                data: series.filter((item)=>item.genre==='comedies')
+            },
+        ],
+        films:[
+            {
+                title:'Drama',
+                data:films.filter((item)=> item.genre==='drama'),
+            },
+            {
+                title:'Children',
+                data:films.filter((item)=> item.genre==='children'),
+            },
+            {
+                title:'Thriller',
+                data:films.filter((item)=> item.genre==='thriller'),
+            },
+            {
+                title:'Suspense',
+                data:films.filter((item)=> item.genre==='suspense'),
+            },
+            {
+                title:'Romance',
+                data:films.filter((item)=> item.genre==='romance'),
+            },
+
+        ]
+    }
+}
